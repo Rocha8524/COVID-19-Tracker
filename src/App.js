@@ -2,7 +2,7 @@ import React from 'react';
 
 import Cards from "./components/Cards/cards";
 import Chart from "./components/Chart/chart";
-import Country from "./components/Select Country/country";
+import Country from "./components/Select-Country/country";
 
 import Style from "./App.css";
 import { fetchData } from "./API/index";
