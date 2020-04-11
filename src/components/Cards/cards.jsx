@@ -6,7 +6,6 @@ import cx from "classnames";
 import Styles from "./cards.module.css";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-
     if (!confirmed) {
         return "Loading data ..."
     }
@@ -35,6 +34,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         </Typography>
                     </CardContent>
                 </Grid>
+                <br/>
 
                 <Grid item component={Card} xs={12} md={3} className={cx(Styles.card, Styles.recovered)}>
                     <CardContent>
@@ -57,6 +57,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         </Typography>
                     </CardContent>
                 </Grid>
+                <br/>
 
                 <Grid item component={Card} xs={12} md={3} className={cx(Styles.card, Styles.deaths)}>
                     <CardContent>
@@ -79,7 +80,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         </Typography>
                     </CardContent>
                 </Grid>
-
+                <br/>
             </Grid>
             <h1>Cards</h1>
         </div>
