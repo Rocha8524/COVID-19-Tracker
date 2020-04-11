@@ -5,14 +5,28 @@ import Chart from "./components/Chart/chart";
 import Country from "./components/Select Country/country";
 
 import Style from "./App.module.css";
+import { fetchData } from "./API/index";
 
 class App extends React.Component {
+
+  state = {
+    data: {},
+  }
+
+  async componentDidMount() {
+    const response = await fetchData();
+
+    this.setState({ data: response });
+
+    console.log(response);
+  }
+
   render() {
     return (
       <div className={Style.container}>
-          <Cards />
-          <Country />
-          <Chart />
+        <Cards data={this.state.data}/>
+        <Country />
+        <Chart />
       </div>
     );
   }
