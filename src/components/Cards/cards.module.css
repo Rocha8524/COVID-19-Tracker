@@ -7,13 +7,22 @@
 }
 
 .infected {
+    text-align: center;
     border-bottom: 10px solid rgba(1, 25, 248, 0.425);
 }
 
 .recovered {
+    text-align: center;
     border-bottom: 10px solid rgba(21, 248, 13, 0.486);
 }
 
 .deaths {
+    text-align: center;
     border-bottom: 10px solid rgba(172, 3, 3, 0.589);
+}
+
+@media (max-width: 720px) {
+    .card {
+        margin: 2% 0 !important;
+    }
 }
