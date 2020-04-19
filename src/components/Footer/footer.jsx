@@ -1,12 +1,14 @@
 import React from "react";
 
+import style from "./footer.module.css";
+
 const Footer = () => {
-    return (
-    <footer>
-        <br />
-        <h2>© 2020 Alexander Rocha</h2>
+  return (
+    <footer className={style.container}>
+      <br />
+      <h2>© 2020 Alexander Rocha</h2>
     </footer>
-    )
-}
+  );
+};
 
 export default Footer;
